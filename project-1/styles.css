@@ -1,0 +1,39 @@
+h2 {
+  color: cornflowerblue;
+}
+
+h3 {
+  color: burlywood;
+}
+
+h4 {
+  color: aquamarine;
+}
+
+div {
+  color: tomato;
+}
+
+h5, h6, p {
+  color: brown;
+}
+
+.class-name {
+  color: violet;
+  position: absolute;
+  right: 1em;
+}
+
+.remove-padding {
+  margin: 0;
+  padding: 0;
+}
+
+h1:hover {
+  color: greenyellow;
+}
+
+img {
+  width: 20em;
+  height: 20em;
+}
