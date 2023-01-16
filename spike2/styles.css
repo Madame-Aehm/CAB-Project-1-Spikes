@@ -1,0 +1,58 @@
+.container {
+  border: solid black 1px;
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* flex-flow: column wrap;
+  height: 20em;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto; */
+}
+
+.flex-item {
+  border: solid black 1px;
+  padding: 0 1.5em;
+  background-color: tomato;
+
+  animation-name: my-animation2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+/* .animate {
+  animation-name: my-animation2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+} */
+
+@keyframes my-animation1 {
+  from { background-color: tomato; }
+  to { background-color: aquamarine; }
+}
+
+@keyframes my-animation2 {
+  0%, 100% {
+    background-color: tomato;
+    border-radius: 0%;
+  }
+  25% {
+    background-color: violet;
+  }
+  50% {
+    background-color: aquamarine;
+    border-radius: 50%;
+  }
+  75% {
+    background-color: yellowgreen;
+  }
+}
+
+
