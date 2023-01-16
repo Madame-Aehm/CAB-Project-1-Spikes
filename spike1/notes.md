@@ -6,17 +6,17 @@
 
 - In a new html file, use **!** shortcut to boilerplate.
 
-- **&lt;head&lt;** tag holds:
+- **&lt;head&gt;** tag holds:
 
-  - **&lt;title&lt;**: title of the page, will also help with SEO (search engine optimization).
-  - **&lt;style&lt;**: can be used to define styles for an html page.
-  - **&lt;script&lt;** client-side JavaScript, but it is better to put the JS scripts at the end of the body. This ensures all hard-coded HTML is already mounted before the script starts running.
-  - **&lt;link&lt;** links two documents, or links an external source. Most commonly used to link to the CSS stylesheet - use link:css to boilerplate.
-  - **&lt;meta&lt;** specifies the character set (how the computer reads the text), viewport settings (the the browser displays on your device screen), page description, keywords and author of the document (also relevant for SEO).
+  - **&lt;title&gt;**: title of the page, will also help with SEO (search engine optimization).
+  - **&lt;style&gt;**: can be used to define styles for an html page.
+  - **&lt;script&gt;** client-side JavaScript, but it is better to put the JS scripts at the end of the body. This ensures all hard-coded HTML is already mounted before the script starts running.
+  - **&lt;link&gt;** links two documents, or links an external source. Most commonly used to link to the CSS stylesheet - use link:css to boilerplate.
+  - **&lt;meta&gt;** specifies the character set (how the computer reads the text), viewport settings (the the browser displays on your device screen), page description, keywords and author of the document (also relevant for SEO).
 
-- **&lt;body&lt;** holds all our actual website content.
+- **&lt;body&gt;** holds all our actual website content.
 
-- HTML tags open and close with angled brackets. A single element will usually have an opening and closing tag - closing tag indicated with a forward slash before the element name.
+- HTML tags open and close with angled brackets. A single element will usually have an opening and closing tag - closing tag indicated with a forward slash before the element name: **&lt;body&gt;** content **&lt;/body&gt;**
 
 - Some select HTML elements are self closing, usually because they hold no content and so two seperate tags are pointless.
 
