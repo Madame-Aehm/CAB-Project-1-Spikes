@@ -18,21 +18,21 @@
 
 - HTML tags open and close with angled brackets. A single element will usually have an opening and closing tag - closing tag indicated with a forward slash before the element name: **&lt;body&gt;** content **&lt;/body&gt;**
 
-- Some select HTML elements are self closing, usually because they hold no content and so two seperate tags are pointless.
+- Some select HTML elements are self-closing, usually because they hold no content and so two seperate tags are pointless.
 
-- Some examples of regular tags (h1, p), and self-closing (img).
+- Give some examples of regular tags (h1, p), and self-closing (img).
 
-- Many elements will have attributes that can modify their look, functionality, or behaviour - class, type, src, etc. This is always in the opening tag.
+- Many elements will have **attributes** that can modify their look, functionality, or behaviour - class, type, src, etc. This is always in the opening tag.
 
-- <div> and <span> elements hold other elements like boxes. Difference is whether they position inline or block.
+- **&lt;div&gt;** and **&lt;span&gt;** elements hold other elements like boxes. Difference is whether they position inline or block.
 
-- Other nested elements, show ul as example. Some elements are not to be nested inside others (eg. p > div).
+- Other **nested** elements, show ul as example. Some elements are not to be nested inside others (eg. p > div).
 
 - Dev tools/Inspector
 
-- CSS - Cascading Style Sheet can be linked in the head tag of an html document. Recommend against using any CSS libraries for the first project so they can get to understand the basic ways HTML and CSS interact.
+- **CSS** - Cascading Style Sheet can be linked in the head tag of an HTML document. Recommend against using any CSS libraries for the first project so they can get to understand the basic ways HTML and CSS interact.
 
-- Selector targets the element/s to which the styles will be applied (multiple elements can take the same style instructions). Recommend looking up selectors on W3Schools, and playing CSS Diner.
+- **Selectors** target the element/s to which the styles will be applied (multiple elements can take the same style instructions). Recommend looking up selectors on W3Schools, and playing [CSS Diner](https://flukeout.github.io/).
 
 - Commonly used:
 
@@ -43,13 +43,13 @@
   - selector1 > selector2 = all selector2 as direct child of a selector1
   - selector1 selector2 = all selector2 nested inside a selector1
 
-- Pseudo-classes can be added to selectors to specify that the styles only apply during a special state. Common examples are :hover, :focus, :active.
+- **Pseudo-classes** can be added to selectors to specify that the styles only apply during a special state. Common examples are :hover, :focus, :active.
 
-- Specificity determines which selector is the most relevant to an element that has conflicting selectors (ie .class is more specific than type). Inline styles are always highest specificity.
+- **Specificity** determines which selector is the most relevant to an element that has conflicting selectors (ie .class is more specific than type). Inline styles are always highest specificity.
 
-- Curly braces surround the style specifications - a property that is to be modified, and the value of that modification: property: value. Property-value pairs must be seperated by a semi-colon.
+- **Curly braces** surround the style - a **property** that is to be modified, and the **value** of that modification: property: value. Property-value pairs must be seperated by a **semi-colon**.
 
-- CSS units - relative (rem, %, vw) and absolute (cm, mm, px). Recommend using relative values for scalability
+- CSS **units** - **relative** (rem, %, vw) and **absolute** (cm, mm, px). Recommend using relative values for scalability.
 
 - Validator demo - https://validator.w3.org/
 
