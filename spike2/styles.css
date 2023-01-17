@@ -1,4 +1,4 @@
-.container {
+.flex-container {
   border: solid black 1px;
   padding: 1em;
   display: flex;

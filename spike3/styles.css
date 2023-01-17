@@ -1,0 +1,77 @@
+/*Grid Template Rows/Columns*/
+
+.grid-template-container {
+  border: solid 1px black;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: [test1] 50px [test2] 50px [test3] 50px;
+  grid-template-rows: 1fr 2fr 20px 4em;
+  gap: 0.5em;
+  /* justify-items: end; */
+  /* justify-content: end; */
+}
+
+.grid-temp-item {
+  border: solid 2px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rogue-item {
+  border: solid 3px red;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  /* grid-column-start: test2;
+  grid-column-end: test3; */
+}
+
+
+/* Grid Areas */
+
+.grid-areas-container {
+  border: solid 2px black;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 200px 2fr 1fr;
+  grid-template-rows: 50px 350px 20px;
+  grid-template-areas: 
+    "top top top"
+    "left main main"
+    "left main main"
+    "bottom bottom bottom";
+  gap: 0.5em;
+}
+
+.grid-areas-container > div {
+  border: solid 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-area-top1 {
+  grid-column-start: top-start;
+  grid-column-end: 3;
+}
+
+.grid-area-top2 {
+  grid-column-start: 3;
+  grid-column-end: top-end;
+}
+
+.grid-area-left {
+  grid-area: left;
+}
+
+.grid-area-main {
+  grid-area: main;
+}
+
+.grid-area-bottom {
+  grid-area: bottom;
+}
+
+
+
+

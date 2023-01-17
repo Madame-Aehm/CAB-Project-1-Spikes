@@ -16,13 +16,17 @@
 
 - **&lt;body&gt;** holds all our actual website content.
 
-- HTML tags open and close with angled brackets. A single element will usually have an opening and closing tag - closing tag indicated with a forward slash before the element name:
+- HTML tags open and close with angled brackets. A single element will usually have an opening and closing tag - closing tag indicated with a forward slash before the element name. eg:
 
-  eg. **&lt;body&gt;** body content **&lt;/body&gt;**, **&lt;p&gt;** paragraph content **&lt;/p&gt;**
+  ```html
+  <p>paragraph content</p>
+  ```
 
-- Some select HTML elements are self-closing, usually because they hold no content and so two seperate tags are pointless.
+- Some select HTML elements are self-closing, usually because they hold no content and so two seperate tags are pointless. eg:
 
-  eg. **&lt;img src="img-source" alt="img alt text" /&gt;**
+  ```html
+  <img src="img-source" alt="img alt text" />
+  ```
 
 - Many elements will have **attributes** that can modify their look, functionality, or behaviour - class, type, src, etc. This is always in the opening tag.
 
@@ -34,7 +38,7 @@
 
 - **CSS** - Cascading Style Sheet can be linked in the head tag of an HTML document. For your first project, I recommend against using any CSS libraries so you can get to understand the basic ways HTML and CSS interact.
 
-- **Selectors** target the element/s to which the styles will be applied (multiple elements can take the same style specs). I recommend looking up "CSS selectors" on W3Schools, and playing [CSS Diner](https://flukeout.github.io/).
+- **Selectors** target the element/s to which the styles will be applied (multiple elements can take the same style specs). I recommend looking up "CSS selectors" on W3Schools. Playing games like [CSS Diner](https://flukeout.github.io/) and [CSS Speedrun](https://css-speedrun.netlify.app/) is a fun way to get in some practise.
 
 - Commonly used:
 
@@ -49,9 +53,14 @@
 
 - **Specificity** determines which selector is the most relevant to an element that has conflicting selectors (ie **.class** is more specific than **type**). **Inline styles** are always highest specificity.
 
-- **Curly braces** surround the style - a **property** that is to be modified, and the **value** of that modification. Property-value pairs must be seperated by a **semi-colon**.
+- **Curly braces** surround the style - a **property** that is to be modified, and the **value** of that modification. Property-value pairs must be seperated by a **semi-colon**. eg:
 
-  eg. **{ color: red; font-size: large }**
+```css
+selector {
+  color: red;
+  font-size: large;
+}
+```
 
 - CSS **units** can be **relative** (rem, %, vw) or **absolute** (cm, mm, px). Relative values are safer to use for scalability purposes.
 
