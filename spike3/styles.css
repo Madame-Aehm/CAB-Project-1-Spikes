@@ -73,5 +73,31 @@
 }
 
 
+@media screen and (max-width: 600px) {
+  .grid-areas-container {
+    background-color: antiquewhite;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 350px 200px 20px;
+    grid-template-areas: 
+      "top top"
+      "main main"
+      "left left"
+      "bottom bottom";
+      gap: 1em;
+  }
+  .grid-area-top1 {
+    grid-column-start: top-start;
+    grid-column-end: 2;
+  }
+  .grid-area-top2 {
+    grid-column-start: 2;
+    grid-column-end: top-end;
+  }
+}
 
+@media screen and (hover:hover) {
+  span:hover {
+    background-color: blueviolet;
+  }
+}
 

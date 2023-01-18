@@ -1,3 +1,11 @@
+body {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.icon-style {
+  color: pink;
+}
+
 .flex-container {
   border: solid black 1px;
   padding: 1em;
@@ -13,6 +21,7 @@
   align-items: center;
   justify-content: space-between;
   overflow: auto; */
+
 }
 
 .flex-item {

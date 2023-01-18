@@ -73,3 +73,19 @@ div {
 - On the child-item, **justify-self**, **align-self**, and **place-self** properties can also be used to position itself within the grid cell.
 
 ### Media Queries
+
+- **Media Queries** can be used to conditionally apply styles based on **media type** or **media feature**. The media type, which is optional, for our use will usually be **screen**. If no media type is specified, it is assumed to be **all**. A list of media features can be found on [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries).
+
+- The most useful media feature for our projects will be **width**, which refers to the pixel width of the viewport. I have also found **hover** to be useful to prevent some strange behaviour from hover styles on touchscreen devices. Example that shows a background change when the device screen width is less than 600px:
+
+```css
+div {
+  background-color: bisque;
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    background-color: antiquewhite;
+  }
+}
+```
