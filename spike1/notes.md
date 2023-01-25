@@ -64,4 +64,4 @@ selector {
 
 - CSS **units** can be **relative** (rem, %, vw) or **absolute** (cm, mm, px). Relative values are safer to use for scalability purposes.
 
-- Project kick-off slides: https://docs.google.com/presentation/d/1tXoWvfL2OQvxMnJJTIayL_1n0UPS0mDfW2mgJX2rzp8/edit#slide=id.g25f6af9dd6_0_0
+- [Project kick-off](https://lms.codeacademyberlin.com/content/web/Module-1/Project-1/Sprint-1#epic2:projectkick-off)
