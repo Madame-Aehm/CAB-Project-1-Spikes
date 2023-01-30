@@ -1,15 +1,16 @@
 # Spike 1 notes
 
-- As explained on the LMS - the Internet is an **INTER**connected **NET** of computers. **Servers** hold information, and **client** computers can make requests to a server for documents that are then displayed in a browser. We will learn how to build some of those documents.
+- As explained on the LMS - the Internet is an **INTER**connected **NET** of computers. **Servers** hold information, and **client** computers (ie. private computers like ours) can make requests to a server for documents that are then displayed in a browser:
+  ![request.png](request.png)
 
 - HTML = **Hyper Text Markup Language**.
 
-- In a new index.html file, use **!** shortcut to boilerplate.
+- In a new index.html file, use **!** shortcut to boilerplate. It is best practise for the **landing page** of your application to be called "index". This tells the browser where to start.
 
 - **&lt;head&gt;** tag holds:
 
-  - **&lt;title&gt;**: title of the page, will also help with SEO (search engine optimization).
-  - **&lt;style&gt;**: can be used to define styles for an html page.
+  - **&lt;title&gt;** title of the page, will also help with SEO (search engine optimization).
+  - **&lt;style&gt;** can be used to define styles for an html page. Best practise, however, is to link an external CSS document.
   - **&lt;script&gt;** client-side JavaScript, but it is better to put the JS scripts at the end of the body. This ensures all hard-coded HTML is already mounted before the script starts running.
   - **&lt;link&gt;** links two documents, or links an external source. Most commonly used to link to the CSS stylesheet - use **link:css** to boilerplate.
   - **&lt;meta&gt;** specifies the **character set** (how the computer reads the text), **viewport** settings (how the browser displays the document on your device screen), **page description**, **keywords** and **author** of the document (also relevant for SEO).
@@ -28,9 +29,9 @@
   <img src="img-source" alt="img alt text" />
   ```
 
-- Many elements will have **attributes** that can modify their look, functionality, or behaviour - class, type, src, etc. This is always in the opening tag.
+- Many elements will have **attributes** that can modify their look, functionality, or behaviour - **class**, **type**, **src**, etc. These are always in the opening tag.
 
-- **&lt;div&gt;** and **&lt;span&gt;** are like boxes that hold other elements. The only difference is positioning: **&lt;div&gt;** default to **block**, while **&lt;span&gt;** default to **inline**.
+- **&lt;div&gt;** and **&lt;span&gt;** are like boxes that hold other elements. The only difference is positioning: **&lt;div&gt;** default to **block**, while **&lt;span&gt;** default to **inline**. There are other more [semantic](https://www.w3schools.com/html/html5_semantic_elements.asp) HTML elements that we recommend you use when appropriate: **&lt;nav&gt;**, **&lt;header&gt;**, **&lt;footer&gt;**, etc. This makes it easier to identify sections in your code.
 
 - Other elements can be **nested**, such as **&lt;li&gt;** inside **&lt;ul&gt;**. However there are some rules and best-practices that should be followed (eg. **&lt;p&gt;** cannot hold a **&lt;div&gt;**). An [HTML validator](https://validator.w3.org/) will help to prevent these mistakes.
 
@@ -62,6 +63,16 @@ selector {
 }
 ```
 
+- Colours in CSS can be set using color: **keyword**, **hex code**, **rgb code**, or **rgba code**. VSCode gives a small sample, which can be clicked to open a colour-picker tool! (Note 'color' is spelt with US English spelling).
+
+- Many HTML elements already have a **default** style, such as display, margin, or padding. This can be overwritten with your custom styles.
+
 - CSS **units** can be **relative** (rem, %, vw) or **absolute** (cm, mm, px). Relative values are safer to use for scalability purposes.
+
+- A single CSS file can be linked to multiple pages, just use the same **link:css** shortcut to create a stylesheet link in the **&lt;head&gt;**. To link two pages together, use an **&lt;a&gt;** tag, with an **href** attribute that specifies the file to be linked. eg:
+
+```html
+<a href="two.html">Link to Page Two</a>
+```
 
 - [Project kick-off](https://lms.codeacademyberlin.com/content/web/Module-1/Project-1/Sprint-1#epic2:projectkick-off)

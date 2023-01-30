@@ -4,13 +4,13 @@
 
 - **CSS Grid** divides the layout of your page into a literal grid - here's an excellent resource from [css-tricks.com](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-- CSS Grid is yet another way to position content in an HTML document. Much like **Flexbox**, you will have a container element that holds children elements to be positioned within. The **display** property will be set to **grid** or **inline-grid** - the only difference will be how your grid container is positioned on the page, think of the difference in positioning behaviour between a **&lt;div&gt;** and a **&lt;span&gt;**.
+- CSS Grid is yet another way to position content in an HTML document. Much like **Flexbox**, a "container" element holds "children" elements to be positioned within. The **display** property will be set to **grid** or **inline-grid** - the only difference will be how your grid container is positioned on the page, think of the difference in positioning behaviour between a **&lt;div&gt;** and a **&lt;span&gt;**.
 
 ### Grid-template-columns / grid-template-rows
 
-- **Grid-template** with **columns** and/or **rows** is one of two ways to define the shape of your grid. The **grid-template-columns** and/or the **grid-template-rows** properties define the number and size of your rows and columns.
+- **Grid-template** with **columns** and/or **rows** is one of two ways to define the shape of a grid. The **grid-template-columns** and/or the **grid-template-rows** properties define the number and size of your rows and columns.
 
-- The templates accept all standard HTML measurement units - **px**, **em**, **%**, etc. They will also accept **auto**, which fills remaining space, and the unique Grid unit **fr** (short for "fraction") which splits the remaining space between all **fr** columns/rows, but it can be specified how much of that space each unit will take. Example that splits into 4 fractions, with the middle column claiming 2 portions of the total:
+- The templates accept all standard HTML measurement units - **px**, **em**, **%**, etc. They will also accept **auto**, which fills remaining space, and the unique Grid unit **fr** (short for "fraction") which splits the remaining space between all **fr** columns/rows. Example of 3 columns split into fractions:
 
 ```css
 div {
@@ -29,7 +29,7 @@ div {
 }
 ```
 
-- Grid **lines** are automatically assigned a number. **Positive** numbers when assigned "left -> right" and "top -> bottom", and **negative** numbers when assigned "right -> left" and "bottom -> top". You can also choose to give them your own names when you declare the template. Child items can be positioned within the grid using the lines, letting single elements span multiple grid cells. Example child item spanning 4 columns:
+- Grid **lines** are automatically assigned a number. **Positive** numbers indicate "left -> right" and "top -> bottom", and **negative** numbers "right -> left" and "bottom -> top". You can also choose to give them your own names when you declare the template. Child items can be positioned within the grid using the lines, letting single elements span multiple grid cells. Example child item spanning 4 columns:
 
 ```css
 .child-item {
@@ -42,9 +42,9 @@ div {
 
 ### Grid-template-areas
 
-- **Grid-template** with **areas** is the other way to define the shape of your grid. It can be used together with **grid-template-rows** and/or **grid-template-columns**, or it can be used to initialize the grid itself, however the size of the cells will be determined by the content if you don't set the row/column sizes.
+- **Grid-template** with **areas** is the other way to define the shape of your grid. It can be used together with **grid-template-rows** / **grid-template-columns**, or it can be used to initialize the grid itself (in this case the size of the cells will be determined by the content).
 
-- The **grid-template-areas** property accepts the **names** of the areas in each row surrounded by **quotation marks**. Each set of quotation marks represents a column. Each row needs to have the same number of cells in order to have correctly aligning columns. Example of 3 row, 4 column grid:
+- The **grid-template-areas** property accepts **names** of the areas in each row. Each set of quotation marks represents a column. Each row needs to have the same number of cells in order to have correctly aligning columns. Example of 3 row, 4 column grid:
 
 ```css
 div {
@@ -56,7 +56,7 @@ div {
 }
 ```
 
-- One or multiple (so long as there are no spaces between them) **full-stops** ( **.** or **....** ) symbol/s represent an empty cell.
+- One or multiple **full-stop** ( **.** or **....** ) symbols represent an empty cell.
 
 - Instead of using the numbers associated with the **grid lines**, you can now use the area name to indicate the start/end positioning of your child elements, or use the **grid-area** property to position that element over the entire area. eg:
 
