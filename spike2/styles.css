@@ -2,10 +2,6 @@ body {
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
 }
 
-.icon-style {
-  color: pink;
-}
-
 .flex-container {
   border: solid black 1px;
   padding: 1em;
@@ -64,4 +60,59 @@ body {
   }
 }
 
+@keyframes my-animation3 {
+  0% {
+    position: relative;
+    left: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    position: relative;
+    left: 500px;
+    transform: rotate(180deg);
+  }
+  100% {
+    position: relative;
+    left: 0;
+    transform: rotate(360deg);
+  }
+}
+  
+.icon-style {
+  color: aqua;
+  animation-name: my-animation3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.checkbox-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.radio-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+input[type="text"] {
+  width: 100%;
+}

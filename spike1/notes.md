@@ -35,7 +35,7 @@
 
 - Other elements can be **nested**, such as **&lt;li&gt;** inside **&lt;ul&gt;**. However there are some rules and best-practices that should be followed (eg. **&lt;p&gt;** cannot hold a **&lt;div&gt;**). An [HTML validator](https://validator.w3.org/) will help to prevent these mistakes.
 
-- Dev tools/Inspector can be opened in a browser by right-clicking and selecting **inspect**, or with keyboard shortcuts <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> for Windows, and <kbd>command</kbd> + <kbd>option</kbd> + <kbd>i</kbd> for Mac (I think?).
+- Dev tools/Inspector can be opened in a browser by right-clicking and selecting **inspect**, or with keyboard shortcuts <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> for Windows, and <kbd>command</kbd> + <kbd>option</kbd> + <kbd>c</kbd> for Mac.
 
 - **CSS** - Cascading Style Sheet can be linked in the head tag of an HTML document. For your first project, I recommend against using any CSS libraries so you can get to understand the basic ways HTML and CSS interact.
 
