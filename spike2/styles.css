@@ -86,7 +86,12 @@ body {
   animation-timing-function: ease;
 }
 
-form {
+
+
+
+
+
+form:first-of-type {
   display: flex;
   flex-direction: column;
   border: solid 1px black;
@@ -94,7 +99,7 @@ form {
   border-radius: 10px;
 }
 
-label {
+form:first-of-type label {
   display: flex;
   align-items: center;
   gap: 0.5em;
@@ -115,4 +120,34 @@ label {
 
 input[type="text"] {
   width: 100%;
+}
+
+
+
+
+
+
+
+form:last-of-type {
+  border: solid 2px red;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+form:last-of-type label:not(label:last-of-type) {
+  margin-right: 12%;
+}
+
+form:last-of-type input[type="checkbox"] {
+  position: relative;
+  top: 0.1em;
+}
+
+form:last-of-type input[type="radio"] {
+  position: relative;
+  top: 0.1em;
+}
+
+.checkbox-div2 {
+  text-align: left;
 }
