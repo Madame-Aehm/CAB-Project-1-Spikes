@@ -8,7 +8,7 @@
 
 ### Grid-template-columns / grid-template-rows
 
-- **Grid-template** with **columns** and/or **rows** is one of two ways to define the shape of a grid. The **grid-template-columns** and/or the **grid-template-rows** properties define the number and size of your rows and columns.
+- **Grid-template** with **columns** and/or **rows** is one of two ways to define the shape of a grid. The **grid-template-columns** and/or the **grid-template-rows** properties define the number and dimensions of your rows and columns.
 
 - The templates accept all standard HTML measurement units - **px**, **em**, **%**, etc. They will also accept **auto**, which fills remaining space, and the unique Grid unit **fr** (short for "fraction") which splits the remaining space between all **fr** columns/rows. Example of 3 columns split into fractions:
 
