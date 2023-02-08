@@ -3,9 +3,11 @@
 - As explained on the LMS - the Internet is an **INTER**connected **NET** of computers. **Servers** hold information, and **client** computers (ie. private computers like ours) can make requests to a server for documents that are then displayed in a browser:
   ![request.png](request.png)
 
-- HTML = **Hyper Text Markup Language**.
+  ## HTML
 
-- In a new index.html file, use **!** shortcut to boilerplate. It is best practise for the **landing page** of your application to be called "index". This tells the browser where to start.
+- HTML = **Hyper Text Markup Language**
+
+- In a new index.html file, use **!** shortcut to boilerplate. It is best practise for the **landing page** of your application to be called "index". This tells the browser where to start. The index.html should also always be in the root folder of your project.
 
 - **&lt;head&gt;** tag holds:
 
@@ -37,7 +39,9 @@
 
 - Dev tools/Inspector can be opened in a browser by right-clicking and selecting **inspect**, or with keyboard shortcuts <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> for Windows, and <kbd>command</kbd> + <kbd>option</kbd> + <kbd>c</kbd> for Mac.
 
-- **CSS** - Cascading Style Sheet can be linked in the head tag of an HTML document. For your first project, I recommend against using any CSS libraries so you can get to understand the basic ways HTML and CSS interact.
+## CSS
+
+- **CSS** Cascading Style Sheet can be linked in the head tag of an HTML document. For your first project, I recommend against using any CSS libraries so you can get to understand the basic ways HTML and CSS interact.
 
 - **Selectors** target the element/s to which the styles will be applied (multiple elements can take the same style specs). I recommend looking up "CSS selectors" on W3Schools. Playing games like [CSS Diner](https://flukeout.github.io/) and [CSS Speedrun](https://css-speedrun.netlify.app/) is a fun way to get in some practise.
 
@@ -69,10 +73,12 @@ selector {
 
 - CSS **units** can be **relative** (rem, %, vw) or **absolute** (cm, mm, px). Relative values are safer to use for scalability purposes.
 
-- A single CSS file can be linked to multiple pages, just use the same **link:css** shortcut to create a stylesheet link in the **&lt;head&gt;**. To link two pages together, use an **&lt;a&gt;** tag, with an **href** attribute that specifies the file to be linked. eg:
+- A single CSS file can be linked to multiple pages to apply consistent styles. To link two HTML pages together, use an **&lt;a&gt;** tag, with an **href** attribute that specifies the file to be linked. eg:
 
 ```html
 <a href="two.html">Link to Page Two</a>
 ```
+
+- Your **folder structure** is up to you, but it is important to have some system in place to organise your files. Having a folder to hold all HTML, a seperate folder to hold all CSS, and a third folder for assets is one approach. Having a folder for each page and the relevant CSS and content is another.
 
 - [Project kick-off](https://lms.codeacademyberlin.com/content/web/Module-1/Project-1/Sprint-1#epic2:projectkick-off)
