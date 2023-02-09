@@ -79,6 +79,6 @@ selector {
 <a href="two.html">Link to Page Two</a>
 ```
 
-- Your **folder structure** is up to you, but it is important to have some system in place to organise your files. Having a folder to hold all HTML, a seperate folder to hold all CSS, and a third folder for assets is one approach. Having a folder for each page and the relevant CSS and content is another.
+- Your **folder structure** is up to you, but it is important to have some system in place to organise your files. Having a folder to hold all HTML, a seperate folder to hold all CSS, and a third folder for assets is one approach. Having a folder for each page and the relevant CSS and content is another. It's best to stick to all **lower-case** letters, and use **-** rather than spaces when naming your files and folders (we call this kebab-case!). 
 
 - [Project kick-off](https://lms.codeacademyberlin.com/content/web/Module-1/Project-1/Sprint-1#epic2:projectkick-off)
