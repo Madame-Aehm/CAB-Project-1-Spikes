@@ -1,4 +1,4 @@
-# Spike 1 notes
+# Project 1: Spike 1
 
 As explained on the LMS - the Internet is an **INTER**connected **NET** of computers. **Servers** hold information, and **client** computers (ie. private computers like ours) can make requests to a server for documents that are then displayed in a browser:
   ![request.png](request.png)

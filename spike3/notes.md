@@ -1,4 +1,4 @@
-# Spike 3 notes
+# Project 1: Spike 3
 
 ## CSS Grid
 

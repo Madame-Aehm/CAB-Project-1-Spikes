@@ -1,4 +1,4 @@
-# Spike 2 notes
+# Project 1: Spike 2
 
 ## Flexbox
 
