@@ -25,7 +25,7 @@ HTML tags open and close with angled brackets. A single element will usually hav
   <p>paragraph content</p>
   ```
 
-Some select HTML elements are self-closing, usually because they hold no content and so two seperate tags are redundant. eg:
+Some select HTML elements are self-closing, usually because they hold no content and so two separate tags are redundant. eg:
 
   ```html
   <img src="img-source" alt="img alt text" />
@@ -50,7 +50,7 @@ Commonly used:
   - selector = element by type
   - .selector = class
   - #selector = id
-  - selector1, selector2 = multiple selectors can be seperated by a comma
+  - selector1, selector2 = multiple selectors can be separated by a comma
   - selector1 > selector2 = all selector2 that are a direct child of a selector1
   - selector1 selector2 = all selector2 nested inside a selector1
 
@@ -58,7 +58,7 @@ Commonly used:
 
 **Specificity** determines which selector is the most relevant to an element that has conflicting selectors (ie **classes** are more specific than **types**). **Inline styles** are always highest specificity.
 
-**Curly braces** surround the style - a **property** that is to be modified, and the **value** of that modification. Property-value pairs must be seperated by a **semi-colon**. eg:
+**Curly braces** surround the style - a **property** that is to be modified, and the **value** of that modification. Property-value pairs must be separated by a **semi-colon**. eg:
 
 ```css
 selector {
@@ -79,6 +79,6 @@ A single CSS file can be linked to multiple pages to apply consistent styles. To
 <a href="two.html">Link to Page Two</a>
 ```
 
-Your **folder structure** is up to you, but it is important to have some system in place to organise your files. Having a folder to hold all HTML, a seperate folder to hold all CSS, and a third folder for assets is one approach. Having a folder for each page and the relevant CSS and content is another. It's best to stick to all **lower-case** letters, and use **hyphens** (**-**) rather than spaces when naming your files and folders (we call this **kebab-case**!). 
+Your **folder structure** is up to you, but it is important to have some system in place to organise your files. Having a folder to hold all HTML, a separate folder to hold all CSS, and a third folder for assets is one approach. Having a folder for each page and the relevant CSS and content is another. It's best to stick to all **lower-case** letters, and use **hyphens** (**-**) rather than spaces when naming your files and folders (we call this **kebab-case**!). 
 
 - [Project kick-off](https://lms.codeacademyberlin.com/content/web/Module-1/Project-1/Sprint-1#epic2:projectkick-off)
