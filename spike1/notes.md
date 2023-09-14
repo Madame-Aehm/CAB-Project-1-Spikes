@@ -11,7 +11,7 @@ In a new index.html file, use **!** shortcut to boilerplate. It is best practise
 
 - `<head>` tag holds:
 
-  - `<title>` holds the title of the page, will also help with SEO (search engine optimization) This is what you see in the tab at the top.
+  - `<title>` holds the title of the page (what you see in the tab at the top), will also help with SEO (search engine optimization).
   - `<style>` can be used to define styles for an html page. Best practise, however, is to link an external CSS document.
   - `<script>` holds client-side JavaScript, but it is better to put the JS scripts at the end of the body. This ensures all hard-coded HTML is already mounted before the script starts running.
   - `<link>` links two documents, or links an external source. Most commonly used to link to the CSS stylesheet - type **link:css** to boilerplate.
@@ -19,7 +19,7 @@ In a new index.html file, use **!** shortcut to boilerplate. It is best practise
 
 - The `<body>` holds all our actual website content.
 
-HTML tags open and close with angled brackets. A single element will usually have an opening and closing tag - closing tag indicated with a forward slash before the element name. eg:
+HTML **tags** open and close with angled brackets. A single [**element**](https://www.w3schools.com/html/html_elements.asp) will usually have an opening and closing tag - closing tag indicated with a forward slash before the element name. eg:
 
   ```html
   <p>paragraph content</p>
@@ -31,7 +31,7 @@ Some select HTML elements are self-closing, usually because they hold no content
   <img src="img-source" alt="img alt text" />
   ```
 
-Many elements will have **attributes** that can modify their look, functionality, or behaviour - **class**, **type**, **src**, etc. These are always in the opening tag.
+Many elements will have [**attributes**](https://www.w3schools.com/html/html_attributes.asp) that can modify their look, functionality, or behaviour - **class**, **type**, **src**, etc. These are always in the opening tag.
 
 `<div>` and `<span>` are like boxes that hold other elements. The only difference is positioning: `<div>` default to **block**, while `<span>` default to **inline**. There are other more [semantic](https://www.w3schools.com/html/html5_semantic_elements.asp) HTML elements that we recommend you use when appropriate: `<nav>`, `<header>`, `<footer>`, etc. This makes it easier to identify sections in your code.
 
