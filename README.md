@@ -16,3 +16,5 @@
   - show any CSS animations and/or Media Queries
   - what are you most proud of/what is your favourite feature?
   - what did you find the most challenging?
+
+## Spike 4 - Git & GitHub
