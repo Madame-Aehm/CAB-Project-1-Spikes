@@ -88,3 +88,6 @@ Make sure to push your changes at the end of each school day! Feel free to keep 
 
 ## Git Pages
 
+Git Pages is a service provided by GitHub that will let you deploy a simple static website directly from a _public_ repository. In the **Settings** of your repo, under **Code and automation**, select **Pages**. Here, select **Deploy from a branch** under **Source**, and then select your main or master branch from the **Branch** select input. Save, and wait a few minutes. 
+
+Your project can then be previewed from `<your-github-username>.github.io/<your-repo-name>`.
