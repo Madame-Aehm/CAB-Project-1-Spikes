@@ -27,17 +27,27 @@ HTML **tags** open and close with angled brackets. A single [**element**](https:
 
 Some select HTML elements are self-closing, usually because they hold no content and so two separate tags are redundant. eg:
 
-  ```html
-  <img src="img-source" alt="img alt text" />
-  ```
+```html
+<input />
+```
 
 Many elements will have [**attributes**](https://www.w3schools.com/html/html_attributes.asp) that can modify their look, functionality, or behaviour - **class**, **type**, **src**, etc. These are always in the opening tag.
 
+```html
+<img src="img-source" alt="img alt text" />
+```
+
+Other elements can be **nested**, such as `<li>` inside `<ul>`. However there are some rules and best-practices that should be followed (eg. `<p>` cannot hold a `<div>`). An [HTML validator](https://validator.w3.org/) will help to prevent these mistakes. It is best practise to **indent** nested elements. This isn't necessary for the computer to read the code, it is only for human readability.
+
 `<div>` and `<span>` are like boxes that hold other elements. The only difference is positioning: `<div>` default to **block**, while `<span>` default to **inline**. There are other more [semantic](https://www.w3schools.com/html/html5_semantic_elements.asp) HTML elements that we recommend you use when appropriate: `<nav>`, `<header>`, `<footer>`, etc. This makes it easier to identify sections in your code.
 
-Other elements can be **nested**, such as `<li>` inside `<ul>`. However there are some rules and best-practices that should be followed (eg. `<p>` cannot hold a `<div>`). An [HTML validator](https://validator.w3.org/) will help to prevent these mistakes.
-
 Dev tools/Inspector can be opened in a browser by right-clicking and selecting **inspect**, or with keyboard shortcuts <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> for Windows, or <kbd>command</kbd> + <kbd>option</kbd> + <kbd>c</kbd> for Mac.
+
+To link two HTML pages together, use an `<a>` tag, with an `href` attribute that specifies the file to be linked. eg:
+
+```html
+<a href="two.html">Link to Page Two</a>
+```
 
 ## CSS
 
@@ -58,7 +68,7 @@ Commonly used:
 
 **Specificity** determines which selector is the most relevant to an element that has conflicting selectors (ie **classes** are more specific than **types**). **Inline styles** are always highest specificity.
 
-**Curly braces** surround the style - a **property** that is to be modified, and the **value** of that modification. Property-value pairs must be separated by a **semi-colon**. eg:
+**Curly braces** surround the style - a **key** defining the property to be modified, and the **value** of that modification. Key-value pairs must be separated by a **semi-colon**. eg:
 
 ```css
 selector {
@@ -67,18 +77,16 @@ selector {
 }
 ```
 
-Colours in CSS can be set using color: **keyword**, **hex code**, **rgb code**, or **rgba code**. The a in **rgba** refers to transparency. VSCode gives a small sample, which can be clicked to open a colour-picker tool! (Note 'color' is spelt with US English spelling).
+Colours in CSS can be set using color: **keyword**, **hex code**, **rgb code**, or **rgba code**. The "a" in **rgba** refers to transparency. VSCode gives a small sample, which can be clicked to open a colour-picker tool! (Note 'color' is spelt with US English spelling).
 
-Many HTML elements already have a **default** style, such as display, margin, or padding. This can be overwritten with your custom styles.
+Many HTML elements already have a **default** style, such as display, margin, or padding. This can be overwritten with your custom styles. If you're ever uncertain, the Inspector Tool will reveal all!
 
 CSS **units** can be **relative** (rem, %, vw) or **absolute** (cm, mm, px). Relative values are safer to use for scalability purposes.
 
-A single CSS file can be linked to multiple pages to apply consistent styles. To link two HTML pages together, use an `<a>` tag, with an `href` attribute that specifies the file to be linked. eg:
+Group elements together inside generic elements such as `<div>` to make positioning easier. The containers can also be styled! Make full use of the Inspector Tool to understand the full size and default behaviour of each element as you attempt to position it. 
 
-```html
-<a href="two.html">Link to Page Two</a>
-```
+A single CSS file can be linked to multiple pages to apply consistent styles. 
 
 Your **folder structure** is up to you, but it is important to have some system in place to organise your files. Having a folder to hold all HTML, a separate folder to hold all CSS, and a third folder for assets is one approach. Having a folder for each page and the relevant CSS and content is another. It's best to stick to all **lower-case** letters, and use **hyphens** (**-**) rather than spaces when naming your files and folders (we call this **kebab-case**!). 
 
-- [Project kick-off](https://lms.codeacademyberlin.com/content/web/Module-1/Project-1/Sprint-1#epic2:projectkick-off)
+[Project kick-off](https://lms.codeacademyberlin.com/content/web/Module-1/Project-1/Sprint-1#epic2:projectkick-off)

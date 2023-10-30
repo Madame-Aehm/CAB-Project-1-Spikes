@@ -27,7 +27,9 @@ Flexbox child elements can be positioned independently using properties such as 
 
 ## CSS Animations
 
-- The `transition` property can be used for small transitions, such as an element reacting to a **pseudo class**. Putting it on both the "before" and "after" states mean it will apply both ways. eg:
+### Transition
+
+The `transition` property can be used for small transitions, such as an element reacting to a **pseudo class**. Putting it on both the "before" and "after" states mean it will apply both ways. eg:
 
 ```css
 div {
@@ -41,9 +43,11 @@ div:hover {
 }
 ```
 
-- `@keyframes` keyword creates a new CSS animation. Every animation must be given an **identifier**, ie. a name. Curly braces will surround the property changes that are to be applied.
+### Keyframes
 
-Your animation will be made up of keyframes, every point from 0-100% can be selected and manually controlled. Tip: setting 0% and 100% the same will ensure a smooth infinite animation loop. eg:
+`@keyframes` keyword creates a new CSS animation. Every animation must be given an **identifier**, ie. a name. Curly braces will surround the property changes that are to be applied.
+
+Your animation will be made up of keyframe, every point from 0-100% can be selected and manually controlled. Tip: setting 0% and 100% the same will ensure a smooth infinite animation loop. eg:
 
 ```css
 @keyframes identifier {
@@ -59,11 +63,11 @@ Your animation will be made up of keyframes, every point from 0-100% can be sele
 }
 ```
 
-- `from` and `to` properties can simplify the syntax for a simple, linear animation that only has two steps.
+`from` and `to` properties can simplify the syntax for a simple, linear animation that only has two steps.
 
-- The animation can then be linked to HTML elements via a selector, and the `animation` property will specify how the animation will apply. Only `animation-name` and `animation-duration` are compulsory for it to run.
+The animation can then be linked to HTML elements via a selector, and the `animation` property will specify how the animation will apply. Only `animation-name` and `animation-duration` are compulsory for it to run.
 
-- The W3Schools [page on animation](https://www.w3schools.com/css/css3_animations.asp) is a great starting point.
+The W3Schools [page on animation](https://www.w3schools.com/css/css3_animations.asp) is a great starting point.
 
 ## Google Fonts & Icons
 
