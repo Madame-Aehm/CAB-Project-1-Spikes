@@ -6,7 +6,7 @@
 
 Flexbox was introduced as a way to help position HTML elements. You will have a parent container element with the `display` property set to **flex**, and the children elements will be considered the flex **items**/**content**. A flex-child item can also have `display` set to flex, making it a container for its own children.
 
-Flexbox works best for small-scale layouts, (eg. `<article>` or `<form>` content).
+Flexbox works best for small-scale layouts, (eg. `<article>` or `<form>` content), but can also be an easy way to center or align larger containers.
 
 Check out this excellent guide with images on [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
