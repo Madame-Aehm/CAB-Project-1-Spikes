@@ -4,25 +4,29 @@
 
 **Git** is what is known as a **version control system**. When you're working on a project, Git will keep track of all your **commits**, ie. changes. If something goes terribly wrong, you can revert back to a previous version without much issue. When working collaboratively, Git will let you create branches off of a main project so you can make changes in a private, safe environment where you won't affect any of your collaborators. When your feature is ready, you can merge it back into the main branch and everyone will be able to see and use it! For more info, you can visit the [Git Docs](https://git-scm.com/doc).
 
-If it isn't already installed on your computer, you'll need to do that first. [Here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) are some in-depth instructions.
+If it isn't already installed on your computer, you'll need to do that first. [Here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) are some in-depth instructions. I will assume you've already created a GitHub account.
+
+---
+
+### Creating a Repository
 
 Let's track your HTML/CSS project using Git! [Here](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) is a great beginners' guide. Let's follow the steps:
 
   1. **Initialize a Repository**: open your project in VSCode, make sure you're in the root folder. You can use `cd` ("change directory") command from the terminal to navigate between folders, then type into the terminal:
 
-      ```
+      ```shell
       git init
       ```
 
       Your project folder is now being **tracked** by Git. Check the status by typing into the terminal:
   
-      ```
+      ```shell
       git status
       ```
 
   2. **Stage files**: to track new files, or update an existing file, you use the `git add` command to add it to the staging queue. You can be specific by giving the name/s of file/s you would like to add, or you can be general by typing:
 
-      ```
+      ```shell
       git add .
       ```
 
@@ -30,7 +34,7 @@ Let's track your HTML/CSS project using Git! [Here](https://git-scm.com/book/en/
 
   3. **Commit changes**: once your changed files have been staged, you're ready to **commit**. Think of commits as a record of the project at that point in time. A commit needs to have a **message** attached to it, just a short description of the updates you made. Commit your changes by typing the terminal command:
 
-      ```
+      ```shell
       git commit -m "Short description of my changes"
       ```
 
@@ -38,17 +42,31 @@ Staging and committing can also be achieved through the VSCode **Source Control*
 
 To view all your previous commits, you can use the command:
 
-```
+```shell
 git log
 ```
 
-To revert a file back to the state of the last commit, you can use the terminal command 
+## Undo! Undo!!
 
-```
+To revert a file back to the state of the last commit (permanently deleting all uncommitted changes), you can use the terminal command 
+
+```shell
 git restore
 ``` 
 
-Beware that this will erase all uncommitted changes, but it can sometimes be very useful to do this.
+If you have already committed your changes but now need to revert back to an earlier version, check for the commit ID you want to revert back to in your commit log. Once you have the ID, you can run
+
+```shell
+git reset commitIDGoesHere
+```
+
+This is only recommended if you haven't already pushed your changes to GitHub!! GitHub will get very upset if you try to just... go back in time. If you have already synchronized your local Git and GitHub, you will need to instead use 
+
+```shell
+git revert commitIDGoesHere
+```
+
+What this does is instead of going back in time, it will look at the older version and overwrite your new files with the old files. This means we're making a _new_ commit, but with _old_ data. The commit history will reflect this, but this way, GitHub stays happy. 
 
 ## GitHub
 
@@ -66,9 +84,11 @@ git config user --global user.name <yourGitHubUserName>
 git config user --global user.email <yourGitHubEmail>
 ```
 
+You'll be prompted to give VSCode access to your GitHub account, as it will be updating your remote repositories on your behalf. 
+
 If you're happy to use the Source Control, you can go ahead and click **publish**. This will automatically create a remote repository, connect it to the open git repo, and push all changes. You will be prompted to name your remote repository and specify if it is to be published publicly or privately. All future commits can be **pushed** online by using the command:
 
-```
+```shell
 git push
 ```
 
@@ -85,6 +105,8 @@ Now we **push** our changes. There is a little bit of disagreement between GitHu
   ```
 
 Make sure to push your changes at the end of each school day! Feel free to keep reading more about Git in the [Git Basics Guide](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
+
+### Revert
 
 ## Git Pages
 
