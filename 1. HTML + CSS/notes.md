@@ -50,6 +50,8 @@ To link two HTML pages together, use an `<a>` tag, with an `href` attribute that
 <a href="two.html">Link to Page Two</a>
 ```
 
+There are a total of 115 (modern usable) HTML elements. It would take hours to demonstrate each one, many of which are extremely niche and rarely needed. Here is a [full list](https://www.w3schools.com/tags/default.asp) of all the tags. Have a look through them, you'll hopefully feel inspired to use them, but just knowing what is available means you have a starting point for your ideas.
+
 ## CSS
 
 **CSS** stands for Cascading Style Sheet, and can be linked in the head tag of an HTML document. For your first project, I recommend against using any CSS libraries so you can get to understand the basic ways HTML and CSS interact.
@@ -67,7 +69,13 @@ Commonly used:
 
 **Pseudo-classes** can be added to selectors to specify that the styles only apply during a special state. Common examples are `:hover`, `:focus`, `:active`.
 
-**Specificity** determines which selector is the most relevant to an element that has conflicting selectors (ie **classes** are more specific than **types**). **Inline styles** are always highest specificity.
+**Specificity** determines which selector is the most relevant to an element that has conflicting selectors. The hierarchy goes:
+  1. **Inline styles**, ie. when you add a `style=""` property to an element
+  2. **IDs**, ie. when you'd added an `id="example"` property, you can target it using `#example`
+  3. **Classes, Pseudo-Classes & Attribute Selectors**, eg. `.example`, `:hover`, `[type="checkbox"]`
+  4. **Element tags**, eg. `h1`
+
+If you're having problems, make sure your element isn't having the style overwritten by a different style of higher specificity!
 
 **Curly braces** surround the style - a **key** defining the property to be modified, and the **value** of that modification. Key-value pairs must be separated by a **semi-colon**. eg:
 
@@ -78,7 +86,7 @@ selector {
 }
 ```
 
-Colours in CSS can be set using color: **keyword**, **hex code**, **rgb code**, or **rgba code**. The "a" in **rgba** refers to transparency. VSCode gives a small sample, which can be clicked to open a colour-picker tool! (Note 'color' is spelt with US English spelling).
+Colours in CSS can be set using color: **keyword**, **hex code**, **rgb code**, or **rgba code** (the "a" in **rgba** refers to transparency.) VSCode gives a small sample, which can be clicked to open a colour-picker tool! (Note: 'color' is spelt with US English spelling).
 
 Many HTML elements already have a **default** style, such as display, margin, or padding. This can be overwritten with your custom styles. If you're ever uncertain, the Inspector Tool will reveal all!
 
