@@ -1,7 +1,8 @@
 # Project 1: Spike 1
 
-As explained on the LMS - the Internet is an **INTER**connected **NET** of computers. **Servers** hold information, and **client** computers (ie. private computers like ours) can make requests to a server for documents that are then displayed in a browser:
-  ![request.png](request.png)
+As explained on the LMS - the Internet is an **INTER**connected **NET** of computers. **Servers** hold information, and **client** computers (ie. private computers like ours) can make requests to a server for documents that are then displayed in a browser:  
+
+![request.png](request.png)
 
 ## HTML
 
@@ -17,13 +18,13 @@ In a new index.html file, use **!** shortcut to boilerplate. It is best practise
   - `<link>` links two documents, or links an external source. Most commonly used to link to the CSS stylesheet - type **link:css** to boilerplate.
   - `<meta>` specifies the **character set** (how the computer reads the text), **viewport** settings (how the browser displays the document on your device screen), **page description**, **keywords** and **author** of the document (also relevant for SEO).
 
-- The `<body>` holds all our actual website content.
+- The `<body>` holds all the actual website content that you'll see on the page.
 
 HTML **tags** open and close with angled brackets. A single [**element**](https://www.w3schools.com/html/html_elements.asp) will usually have an opening and closing tag - closing tag indicated with a forward slash before the element name. eg:
 
-  ```html
-  <p>paragraph content</p>
-  ```
+```html
+<p>paragraph content</p>
+```
 
 Some select HTML elements are self-closing, usually because they hold no content and so two separate tags are redundant. eg:
 
