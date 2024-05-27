@@ -46,12 +46,12 @@ To view all your previous commits, you can use the command:
 git log
 ```
 
-## Undo! Undo!!
+### Undo! Undo!!
 
 To revert a file back to the state of the last commit (permanently deleting all uncommitted changes), you can use the terminal command 
 
 ```shell
-git restore
+git restore .
 ``` 
 
 If you have already committed your changes but now need to revert back to an earlier version, check for the commit ID you want to revert back to in your commit log. Once you have the ID, you can run
@@ -86,6 +86,10 @@ git config user --global user.email <yourGitHubEmail>
 
 You'll be prompted to give VSCode access to your GitHub account, as it will be updating your remote repositories on your behalf. 
 
+### Creating a _Remote_ Repository
+
+A remote repository simply refers to a copy of your Git repo saved somewhere online. There is no automatic updates, however. When you commit changes locally, they are only local until you **push** those changes and synchronize the local and remote repositories. 
+
 If you're happy to use the Source Control, you can go ahead and click **publish**. This will automatically create a remote repository, connect it to the open git repo, and push all changes. You will be prompted to name your remote repository and specify if it is to be published publicly or privately. All future commits can be **pushed** online by using the command:
 
 ```shell
@@ -106,10 +110,8 @@ Now we **push** our changes. There is a little bit of disagreement between GitHu
 
 Make sure to push your changes at the end of each school day! Feel free to keep reading more about Git in the [Git Basics Guide](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
 
-### Revert
+## GitHub Pages
 
-## Git Pages
-
-Git Pages is a service provided by GitHub that will let you deploy a simple static website directly from a _public_ repository. In the **Settings** of your repo, under **Code and automation**, select **Pages**. Here, select **Deploy from a branch** under **Source**, and then select your main or master branch from the **Branch** select input. Save, and wait a few minutes. 
+GitHub Pages is a service provided by GitHub that will let you deploy a simple static website directly from a _public_ repository. In the **Settings** of your repo, under **Code and automation**, select **Pages**. Here, select **Deploy from a branch** under **Source**, and then select your main or master branch from the **Branch** select input. Save, and wait a few minutes. 
 
 Your project can then be previewed from `<your-github-username>.github.io/<your-repo-name>`.
