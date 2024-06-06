@@ -47,7 +47,7 @@ div:hover {
 
 `@keyframes` keyword creates a new CSS animation. Every animation must be given an **identifier**, ie. a name. Curly braces will surround the property changes that are to be applied.
 
-Your animation will be made up of keyframe, every point from 0-100% can be selected and manually controlled. Tip: setting 0% and 100% the same will ensure a smooth infinite animation loop. eg:
+Your animation will be made up of keyframes, every point from 0-100% can be selected and manually controlled. Tip: setting 0% and 100% the same will ensure a smooth infinite animation loop. eg:
 
 ```css
 @keyframes identifier {
@@ -73,9 +73,11 @@ The W3Schools [page on animation](https://www.w3schools.com/css/css3_animations.
 
 **Google Fonts** and **Google Icons** is a free resource provided by Google, where you can use fonts and icons hosted by Google. Their [FAQ](https://developers.google.com/fonts/faq) will cover most of what we need to know.
 
-For this project, we can `<link>` to the font we want to use from the `<head>` of our HTML document. Start by choosing a font from [https://fonts.google.com/](https://fonts.google.com/). The square icon at the very top right of the page will open a sidebar showing all your currently selected fonts. Many fonts will have multiple **weight** and/or **italic** options. Choose as many as you think you'll use.
+For this project, we can `<link>` to the font we want to use from the `<head>` of our HTML document. Start by choosing a font from [https://fonts.google.com/](https://fonts.google.com/). Click to choose a font to view sample texts, and when you're ready, click **Get font**. 
 
-Once you're happy with your selection, in the side bar under **Use on the web**, we're going to select the `<link>` radio. Copy the whole snippet, and paste it into the `<head>` of your HTML document. This creates a link between your project, and Google's online resource. So long as you have an Internet connection, you will be able to use this font!
+When we click **<> Get embed code**, you'll be given code samples to `<link>` your chosen fonts as a stylesheet, along with some CSS sample code. This has been generated using _all_ the fonts you have chosen, so make sure you're not adding duplicates. The icon in the top right corner blue is our "cart", if you want to see which fonts you have selected. You can also remove fonts from here to remove them from the link sample.
+
+Once you're happy with your selection, copy the snippet and paste it into the `<head>` of your HTML document. This creates a link between your project, and Google's online resource. So long as you have an Internet connection, you will be able to use this font!
 
 In your `styles.css`, you can now use the `font-family` property to apply your font to whichever element you choose. Eg:
 

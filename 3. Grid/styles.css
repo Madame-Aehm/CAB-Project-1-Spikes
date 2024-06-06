@@ -11,14 +11,15 @@
   /* justify-content: end; */
 }
 
-.grid-temp-item {
+.grid-template-container div {
+  padding: 0.5rem;
   border: solid 2px black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.rogue-item {
+#rogue-item {
   border: solid 3px red;
   grid-column-start: 2;
   grid-column-end: 3;

@@ -2,7 +2,7 @@
 
 ## Git
 
-**Git** is what is known as a **version control system**. When you're working on a project, Git will keep track of all your **commits**, ie. changes. If something goes terribly wrong, you can revert back to a previous version without much issue. When working collaboratively, Git will let you create branches off of a main project so you can make changes in a private, safe environment where you won't affect any of your collaborators. When your feature is ready, you can merge it back into the main branch and everyone will be able to see and use it! For more info, you can visit the [Git Docs](https://git-scm.com/doc).
+**Git** is what is known as a **version control system**. When you're working on a project, Git will keep track of all your **commits**, ie. changes. If something goes terribly wrong, you can revert back to a previous version without much issue. When working collaboratively, Git will let you create branches off of a main project so you can make changes in a private, safe environment where you won't affect any of your collaborators. When your feature is ready, you can merge it back into the main branch and everyone will be able to pull those changes into their own environments! For more info, you can visit the [Git Docs](https://git-scm.com/doc).
 
 If it isn't already installed on your computer, you'll need to do that first. [Here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) are some in-depth instructions. I will assume you've already created a GitHub account.
 
@@ -77,11 +77,11 @@ Note that so far, all of this has occurred **locally**, ie. only on your compute
 To connect your GitHub directly to VSCode, you must give permission to access your GitHub account locally. You can enter your credentials into the command line:
 
 ```shell
-git config user --global user.name <yourGitHubUserName>
+git config user --global user.name "yourGitHubUserName" 
 ```
 
 ```shell
-git config user --global user.email <yourGitHubEmail>
+git config user --global user.email yourGitHubEmail
 ```
 
 You'll be prompted to give VSCode access to your GitHub account, as it will be updating your remote repositories on your behalf. 
