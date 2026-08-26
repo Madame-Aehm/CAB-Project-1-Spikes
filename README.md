@@ -1,3 +1,5 @@
+Supplementary notes and code samples for live-code demos (spikes) from my time teaching at Code Academy Berlin. All course content is now available [open source](https://github.com/CodeAcademyBerlin/content). 
+
 # Project 1
 
 ## Spike 1 - Project Kick-off + Intro to HTML & CSS
